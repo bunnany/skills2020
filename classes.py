@@ -8,9 +8,9 @@ class Dog:
     """
     Dogs have hair colour and type
     As defined here they can only bark
+    and give their age in human years
     """
-    # define our class variables here
-    # none defined
+
     def __init__(self, __colour, __hair, __age):
         """
         Construct a new Dog object
@@ -35,31 +35,8 @@ class Dog:
         """
         return self.__age*7
 
-    def get_colour(self):
-        """
-        @return a string of the colour
-        """
-        return self.__colour
-
-    def set_age(self, age):
-        """
-        @param age - an int of the new age
-        """
-        self.__age = age
 
 if __name__ == "__main__":
     fido = Dog("brown", "wiry", 3)
     rex = Dog("grey", "short", 4)
     kimchi = Dog("tan", "poofy", 1)
-
-
-    # Make a kennel of dogs
-    dogs = []
-    for dog in range(10):
-        dogs.append(Dog("black", "long", 0))
-
-    # Make them bark
-    for dog in dogs:
-        dog.bark()
-
-    # Encapsulation getters / setters
