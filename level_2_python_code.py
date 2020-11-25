@@ -1,5 +1,5 @@
 ##
-# lists.py
+# lists
 
 # Defining a list
 shopping = []
@@ -24,8 +24,7 @@ print(shopping)
 
 
 ##
-# dictionary_notes.py
-# Class notes on accessing and traversing keys and values in a dictionary
+# dictionaries
 
 capitals = {'New Zealand':'Wgtn', 'Australia':'Sydney', 'Germany':'Berlin'}
 
@@ -67,29 +66,12 @@ for country, capital in capitals.items():
     print(country, '=', capital)
 
 
-#A List of Lists
+##
+# A List of Lists
 l = [[1,2],[3,4],[5,6]]
 print(l[1][0])
 
 
-#A List of Dictionaries
-
-
-##
-# nested_lists_in_dic.py
-# Lists inside dictionaries
-
-favourite_movies = {'John':['Horror','Comedy','Action'],
-                    'Joe':['Documentary'],
-                    'Jane':['Romance','RomComs']}
-
-for code, movies in favourite_movies.items():
-    if len(movies) < 2:
-        print(code, "favourite movie is: ")
-    else:
-        print(code, "favourite movies are: ")
-    for movie in movies:
-        print(movie)
 
 ##
 # Lists in a Dictiionary
